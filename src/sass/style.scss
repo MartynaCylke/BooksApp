@@ -21,6 +21,13 @@ figure {
 }
 
 .book {
+  width: 280px;
+  margin-bottom: 40px;
+
+  &.is-hidden {
+    display: none;
+  }
+
   &__image {
     display: inline-block;
     margin: 10px 30px;
@@ -73,7 +80,12 @@ figure {
     overflow: hidden;
 
     &__fill {
-      width: 100%;
+      min-width: 2.5rem;
+      padding: 4px 8px;
+      color: #fff;
+      background: #2980b9;
+      box-sizing: border-box;
+      text-align: right;
     }
   }
 
