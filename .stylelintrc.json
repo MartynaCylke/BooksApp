@@ -1,4 +1,5 @@
 {
+  "customSyntax": "postcss-scss",
   "plugins": [
     "stylelint-scss"
   ],
@@ -18,7 +19,7 @@
       "except": ["first-nested"],
       "ignore": ["after-comment"]
     } ],
-    "unit-whitelist": null,
+    "unit-allowed-list": null,
     "scss/selector-no-redundant-nesting-selector": true,
     "scss/no-duplicate-dollar-variables": true
   }

@@ -14,13 +14,13 @@
     <div class="container">
 
       <!-- FILTERS FORM -->
-      <section class="filters">
+      <section class="filters" aria-label="Book filters">
         <div>
           <label>
-            Adults only: <input name="filter" value="adults" type="checkbox">
+            Adults only: <input name="filter[]" value="adults" type="checkbox">
           </label>
           <label>
-            Non-fiction: <input name="filter" value="nonFiction" type="checkbox">
+            Non-fiction: <input name="filter[]" value="nonFiction" type="checkbox">
           </label>
         </div>
       </section>
@@ -45,14 +45,14 @@
       </header>
 
       <!-- cover image -->
-      <a href="#" class="book__image" data-id="{{ id }}">
+      <a href="#" class="book__image" data-id="{{ id }}" aria-label="Toggle {{ name }} as favourite" role="button">
         <figure>
           <img src="{{ image }}" alt="{{ name }}">
         </figure>
       </a>
 
       <!-- ratings -->
-      <div class="book__rating">
+      <div class="book__rating" aria-label="Rating: {{ rating }} out of 10">
         <div class="book__rating__fill">
           {{ rating }}/10
         </div>
