@@ -12,8 +12,6 @@ export default [
       globals: {
         ...globals.browser,
         Handlebars: "readonly",
-        dataSource: "readonly",
-        utils: "readonly",
       },
     },
     rules: {
@@ -21,6 +19,15 @@ export default [
       quotes: ["error", "single", { allowTemplateLiterals: true }],
       semi: ["error", "always"],
       "no-console": "off",
+    },
+  },
+  {
+    files: ["src/js/script.js"],
+    languageOptions: {
+      globals: {
+        dataSource: "readonly",
+        utils: "readonly",
+      },
     },
   },
   {
