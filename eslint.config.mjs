@@ -22,6 +22,12 @@ export default [
     },
   },
   {
+    files: ["src/js/data.js", "src/js/functions.js"],
+    rules: {
+      "no-unused-vars": "off",
+    },
+  },
+  {
     files: ["src/js/script.js"],
     languageOptions: {
       globals: {
